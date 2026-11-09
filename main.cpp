@@ -1,47 +1,16 @@
-// ====================================================================
 //  PROYECTO FINAL - ALGORITMOS
 //  SISTEMA DE INVENTARIO Y VENTAS (Variante B: Farmacia)
-//
-//  Son DOS sistemas dentro de un solo programa:
-//    1) CASA MEDICA (distribuidora): tiene el inventario general,
-//       recibe solicitudes de las farmacias, hace presupuestos y
-//       manda los envios con 3 repartidores.
-//    2) FARMACIA (venta al publico): tiene su propio inventario,
-//       le pide productos a la casa medica y registra ventas.
-//
-//  Programa de consola. Guarda todo en archivos .txt (fstream).
-//  Compatible con Dev-C++ (C++98 / C++11 en adelante).
-//
-//  ORDEN DE ESTE ARCHIVO (cada parte esta marcada con un titulo):
-//    1. Librerias y constantes
-//    2. Estructuras de datos (struct)
-//    3. Utilidades: texto, lectura validada y fechas
-//    4. Busquedas
-//    5. Manejo de stock (lotes)
-//    6. Ordenamiento
-//    7. Persistencia (guardar y cargar archivos)
-//       (7B. Datos iniciales: productos con los que arranca el sistema)
-//    8. Pantallas de consulta compartidas
-//    9. Reportes compartidos
-//   10. Modulo Casa Medica: productos, clientes, usuarios
-//   11. Modulo Envios y repartidores
-//   12. Modulo Presupuestos y solicitudes
-//   13. Menu principal de la Casa Medica
-//   14. Modulo Farmacia: pedidos, ventas, reportes y menu
-//   15. Login y funcion main()
-// ====================================================================
 
 
-// ====================================================================
 //  1. LIBRERIAS Y CONSTANTES
-// ====================================================================
-#include <iostream>   // cout, cin: mostrar y leer en consola
-#include <fstream>    // ifstream, ofstream: leer y escribir archivos
-#include <sstream>    // ostringstream, istringstream: convertir texto y numeros
-#include <iomanip>    // setw, setprecision: dar formato a las tablas
-#include <string>     // string: manejo de texto
-#include <ctime>      // time: obtener la fecha de hoy
-#include <cstdlib>    // exit
+
+#include <iostream>   
+#include <fstream>    
+#include <sstream>    
+#include <iomanip>    
+#include <string>    
+#include <ctime>      
+#include <cstdlib>    
 using namespace std;
 
 // Tamanos maximos de los arreglos (en C++ de este nivel los arreglos son fijos)
